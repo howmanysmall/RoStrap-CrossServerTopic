@@ -1,0 +1,14 @@
+{
+  "name": "CrossServerMessages",
+  "servePort": 8000,
+  "partitions": {
+    "src": {
+      "path": "src",
+      "target": "ServerStorage.Repository.Game"
+    },
+    "example": {
+      "path": "example",
+      "target": "ServerScriptService"
+    }
+  }
+}
