@@ -69,6 +69,7 @@ local Resources = require(ReplicatedStorage:WaitForChild("Resources"))
 
 local Debug = Resources:LoadLibrary("Debug")
 local Signal = Resources:LoadLibrary("Signal")
+local Table = Resources:LoadLibrary("Table")
 local Typer = Resources:LoadLibrary("Typer")
 
 -- CrossServerTopic --
@@ -148,4 +149,4 @@ function CrossServerTopic:Destroy()
 	self:Unsubscribe()
 end
 
-return CrossServerTopic
+return Table.Lock(CrossServerTopic)
